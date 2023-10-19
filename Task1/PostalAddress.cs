@@ -12,9 +12,20 @@ namespace Task1
     {
         public string streetName { get; private set; }
         public int houseNumber { get; private set; }
+        public int ApartmentNumber { get; private set; }
         public int postCode { get; private set; }
         public string city { get; private set; }
         public string country { get; private set; }
+
+        public string FullAddress 
+        {
+            get
+            {
+                string address = $"{houseNumber}/{ApartmentNumber} {streetName}\n{city}\n{postCode}\n{country}";
+                return address ;
+            }
+        }
+
 
     }
 }

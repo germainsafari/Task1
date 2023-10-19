@@ -9,6 +9,7 @@ namespace Task1
     
     public class Person
     {
+        public PostalAddress PostalAddress { get; set; }    
         public string FirstName { get; private set; }
         public string FamilyName { get; private set; }
 
@@ -22,6 +23,7 @@ namespace Task1
             this.FamilyName = lName;
 
         }
+        public string FullPostalAdress;
         
     }
     
